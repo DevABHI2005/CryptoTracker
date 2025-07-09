@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ✅ App.css — Global styles, themes, transitions */
+
+:root {
+  --primary: #4f46e5;
+  --secondary: #22c55e;
+  --danger: #ef4444;
+  --text: #111827;
+  --bg: #f9fafb;
+  --card: #ffffff;
+}
+
+body.dark {
+  --primary: #818cf8;
+  --secondary: #4ade80;
+  --danger: #f87171;
+  --text: #f9fafb;
+  --bg: #1f2937;
+  --card: #374151;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Shared elements */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--secondary);
+}
+
+.btn {
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  background-color: var(--card);
+  border-radius: 14px;
+  transition: all 0.25s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transform: scale(1.01);
+}
+
+input, textarea, select {
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Colorful tags */
+.badge-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.badge-success {
+  background: var(--secondary);
+  color: #fff;
+}
+
+.badge-danger {
+  background: var(--danger);
+  color: #fff;
+}
+

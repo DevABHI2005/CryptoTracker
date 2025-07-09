@@ -1,0 +1,53 @@
+.crypto-scroller-wrapper {
+  position: fixed;
+  bottom: 80px; /* adjust height as needed */
+  left: 0;
+  right: 0;
+  pointer-events: none;
+z-index: 0;
+  padding: 0.5rem 0;
+  background: transparent;
+}
+
+
+.news-feed {
+  display: grid;
+  gap: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+.news-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.news-item:hover {
+  background-color: #1a1a2e;
+  transform: translateY(-2px);
+}
+
+
+.news-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+
+.crypto-scroller-wrapper .scroller-track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll-left 25s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

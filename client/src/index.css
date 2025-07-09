@@ -1,0 +1,79 @@
+/* Typography and basic resets */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+/* Reusable button */
+.btn-lg {
+  transition: transform 0.2s ease;
+}
+.btn-lg:hover {
+  transform: scale(1.05);
+}
+
+/* List styling for profile/landing */
+ul.list-group-flush .list-group-item {
+  background-color: #fff;
+  border: none;
+  border-left: 4px solid #0d6efd;
+  margin-bottom: 5px;
+  transition: all 0.2s;
+}
+ul.list-group-flush .list-group-item:hover {
+  background-color: #f1f1f1;
+  border-left-color: #198754;
+}
+
+/* Profile card styling */
+.profile-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive containers */
+.container-sm {
+  max-width: 600px;
+}
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hover elevation effect */
+.card-hover:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
+
+/* Animated buttons */
+.btn-animate {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+.btn-animate:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Section titles */
+.section-title {
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: #343a40;
+  border-bottom: 2px solid #198754;
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}

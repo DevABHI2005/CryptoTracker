@@ -1,0 +1,60 @@
+/* Navbar.css */
+
+/* Base style for navbar */
+.navbar {
+  background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #444;
+  transition: background 0.4s ease;
+  z-index: 1000;
+}
+
+/* Brand styling */
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff !important;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  color: #00d1ff !important;
+}
+
+/* Navigation buttons */
+.navbar .btn {
+  border-radius: 20px;
+  font-weight: 500;
+  padding: 6px 14px;
+  transition: all 0.25s ease;
+}
+
+/* Hover effects for buttons */
+.navbar .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 5px #00ffe0;
+}
+
+/* Active link glow */
+.navbar .btn-outline-info.active,
+.navbar .btn-outline-light.active,
+.navbar .btn-outline-success.active {
+  background-color: #00ffe0;
+  color: #000;
+}
+
+/* Dark mode toggle (if added later) */
+.theme-toggle {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: #00ffe0;
+}
