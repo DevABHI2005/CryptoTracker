@@ -54,8 +54,7 @@ CryptoTracker/
 
 ## 🌍 Deployment
 
-- Frontend: [Vercel](https://vercel.com/)
-- Backend: [Render](https://render.com/) or [Railway](https://railway.app/)
+- Frontend: [Vercel](https://crypto-tracker-ten-gold-54.vercel.app/)
 
 ---
 
